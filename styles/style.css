@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+body {
+    font-family:"Playwrite CU", cursive;
+    background-color:cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tareas {
+    background-color: rgb(227, 241, 201);
+    padding: 160px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px #888888
+}
+
+h1 {
+    text-align:start;
+    font-size: 50px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+input[type="text"] {
+    flex: 5;
+    padding: 10px;
+    border: 5px solid #d6c9c9;
+    border-radius: 10px 0 0 10px;
+}
+
+button[type="submit"], button#limpiar {
+    padding: 10px 20px;
+    background-color: #4de671;
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#limpiar:hover{
+    background-color:#b7c442;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li.completada {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.completar-btn, .eliminar-btn {
+    background-color: #b7c442;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+}
+
+.completar-btn:hover{
+    background-color:#4de671;
+}
+.eliminar-btn:hover{
+    background-color:#4de671;
+}
